@@ -1,0 +1,5 @@
+{
+  "monitoring": {
+    "period": "Monitoring period: {minutes} minutes"
+  }
+}

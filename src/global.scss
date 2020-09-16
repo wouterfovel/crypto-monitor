@@ -1,0 +1,30 @@
+@import 'style/reset';
+@import 'style/variables';
+
+.v-application {
+  font-family: 'Nunito', sans-serif !important;
+  color: white;
+}
+
+.txt {
+
+  &-x-small {
+    font-size: $font-size-extra-small !important;
+  }
+
+  &-small {
+    font-size: $font-size-small !important;
+  }
+
+  &-normal {
+    font-size: $font-size-normal !important;
+  }
+
+  &-medium {
+    font-size: $font-size-medium !important;
+  }
+
+  &-bigger {
+    font-size: $font-size-big !important;
+  }
+}
