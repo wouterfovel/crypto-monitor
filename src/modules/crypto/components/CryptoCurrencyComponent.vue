@@ -4,7 +4,7 @@
 			<v-col class="pt-8 pl-8" cols="12" md="8">
 				<v-row class="pl-8 pr-8" align="center" justify="space-between">
 					<p>{{selectedCryptoCurrency ? selectedCryptoCurrency.name : ''}}</p>
-					<p>{{ $t('monitoring.period', {minutes: cryptoHistoryPeriodInMinutes}) }}</p>
+					<p>{{ $t('monitoring.period')}}: {{$tc('time.minutes', cryptoHistoryPeriodInMinutes)}}</p>
 				</v-row>
 				<hl-crypto-currency-info :crypty-currency="selectedCryptoCurrency"/>
 				<div class="px-3">
@@ -32,7 +32,7 @@
 													<template v-slot:activator="{on}">
 														<span v-on="on" class="txt-small text-color">{{price(currency)}}</span>
 													</template>
-													<span>Daily volume in US Dollar</span>
+                          <span v-t="{path: 'monitoring.dailyVolume', args: {currency: 'US Dollar'}}"></span>
 												</v-tooltip>
 											</v-row>
 										</v-col>

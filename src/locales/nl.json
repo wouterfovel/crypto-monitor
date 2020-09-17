@@ -1,5 +1,13 @@
 {
+  "common": {
+    "price": "prijs",
+    "price_cap": "@.capitalize:price"
+  },
+  "time": {
+    "minutes": "0 minuten | 1 minuut| {n} minuten"
+  },
   "monitoring": {
-    "period": "Monitor periode: {minutes} minuten"
+    "period": "Monitor periode",
+    "dailyVolume": "Dagelijks volume in {currency}"
   }
 }

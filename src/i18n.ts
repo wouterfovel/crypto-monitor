@@ -19,5 +19,10 @@ function loadLocaleMessages (): LocaleMessages {
 export default new VueI18n({
   locale: process.env.VUE_APP_I18N_LOCALE || 'en',
   fallbackLocale: process.env.VUE_APP_I18N_FALLBACK_LOCALE || 'en',
-  messages: loadLocaleMessages()
+  messages: loadLocaleMessages(),
+  modifiers: {
+    snakeCase: (str) => str.split(' ').join('-'),
+    capitalize: (str) => str.charAt(0).toUpperCase() + str.slice(1)
+  },
+  silentFallbackWarn: true
 })

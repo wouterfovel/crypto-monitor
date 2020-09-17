@@ -9,7 +9,7 @@
 				</hl-crypto-currency-card>
 			</v-col>
 			<v-col cols="6">
-				<hl-crypto-currency-card :title="'Price'" :tooltip="'Price in US Dollar on the monitoring period start'">
+				<hl-crypto-currency-card :title="$t('common.price_cap')" :tooltip="'Price in US Dollar on the monitoring period start'">
 					<template v-slot:body>
 						<span class="text-color">{{price}}</span>
 					</template>
