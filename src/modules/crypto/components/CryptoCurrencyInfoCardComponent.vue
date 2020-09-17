@@ -1,7 +1,7 @@
 <template>
 	<v-card :min-height="100" elevation="10" class="background-card">
 		<v-card-title>
-			<span class="white--text">{{title}}</span>
+			<span class="white--text capitalize">{{title}}</span>
 		</v-card-title>
 		<v-card-text>
 			<template v-if="tooltip">
@@ -11,7 +11,7 @@
 							<slot name="body"/>
 						</div>
 					</template>
-					<span >{{tooltip}}</span>
+         <p class="capitalize">{{tooltip}}</p>
 				</v-tooltip>
 			</template>
 			<template v-else>
@@ -41,4 +41,8 @@
 	.background-card {
 		background-color: $color-background-card;
 	}
+
+  .capitalize:first-letter {
+    text-transform: capitalize;
+  }
 </style>

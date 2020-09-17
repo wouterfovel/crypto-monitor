@@ -1,13 +1,19 @@
 {
   "common": {
     "price": "prijs",
-    "price_cap": "@.capitalize:price"
+    "trades": "transacties",
+    "volume": "volume",
+    "trend": "trend",
+    "period": "periode"
   },
   "time": {
     "minutes": "0 minuten | 1 minuut| {n} minuten"
   },
   "monitoring": {
-    "period": "Monitor periode",
-    "dailyVolume": "Dagelijks volume in {currency}"
+    "period": "monitor periode",
+    "dailyVolume": "dagelijks volume in {currency}",
+    "priceOnStart": "@:(common.price) in {currency} bij start huidige @:(common.period)",
+    "tradesPerformed": "transacties uitgevoerd tijdens de huidige @:(common.period)",
+    "volumeReached": "totaal volume bij einde huidige periode, in {currency}"
   }
 }

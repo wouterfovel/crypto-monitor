@@ -8,7 +8,7 @@
 				</v-row>
 				<hl-crypto-currency-info :crypty-currency="selectedCryptoCurrency"/>
 				<div class="px-3">
-					<hl-crypto-currency-card :title="'Trend'" :tooltip="'Currency price trend in USD, during the monitoring period'">
+					<hl-crypto-currency-card :title="$t('common.trend')" :tooltip="'Currency price trend in USD, during the monitoring period'">
 						<template v-slot:body>
 							<hl-crypto-currency-graph :graph-interval="currencyHistoryInterval"/>
 						</template>

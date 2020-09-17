@@ -9,7 +9,7 @@
 				</hl-crypto-currency-card>
 			</v-col>
 			<v-col cols="6">
-				<hl-crypto-currency-card :title="$t('common.price_cap')" :tooltip="'Price in US Dollar on the monitoring period start'">
+				<hl-crypto-currency-card :title="$t('common.price')" :tooltip="$t('monitoring.priceOnStart', {currency: 'US Dollar'})">
 					<template v-slot:body>
 						<span class="text-color">{{price}}</span>
 					</template>
@@ -18,14 +18,14 @@
 		</v-row>
 		<v-row align="center">
 			<v-col cols="6">
-				<hl-crypto-currency-card :title="'Trades'" :tooltip="'Trades performed during the monitoring period'">
+				<hl-crypto-currency-card :title="$t('common.trades')" :tooltip="$t('monitoring.tradesPerformed')">
 					<template v-slot:body>
 						<span class="text-color">{{tradeCount}}</span>
 					</template>
 				</hl-crypto-currency-card>
 			</v-col>
 			<v-col cols="6">
-				<hl-crypto-currency-card :title="'Volume'" :tooltip="'Volume reached during the monitoring period, in US Dollar'">
+				<hl-crypto-currency-card :title="$t('common.volume')" :tooltip="$t('monitoring.volumeReached', {currency: 'US Dollar'})">
 					<template v-slot:body>
 						<span class="text-color">{{volume}}</span>
 					</template>
