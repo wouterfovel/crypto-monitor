@@ -1,4 +1,4 @@
-# test-app
+# crypto monitor
 
 ## Tools used
 ```
@@ -71,23 +71,14 @@
     - On 'small-screen' breakpoint, the coins list will be placed under the info/trend graph, so we have responsivenes on 
     small screens.
 
+- vue add i18n (Internatinalization)
+
 - Other things
 
     - Did not add support for dark/light theming. Figured that this is not really a lot of extra value.
     - Did not add SEO keywords/manifest files.
     - Did not provide units testing (Jest).
-
-- Development Process
-
-    - As it was a small project, I did not use a backlog/versioning system, like Jira.
-    I just named the branches HUSLEIE-XXXXX.
-    For larger projects, I would create epics/stories upfront (HUSLEIE-XXXXX), these are to be analyzed and estimated
-    (e.g. fibonacci 1-2-3-5-8[-13]).
-    The higher the story is positioned in the backlog, the more detailed the analysis should be, so it can be put on 
-    the next sprint.
-    I also like to use Pull/Merge Requests, so each feature branch is code reviewed and tested by at least one other person
-    before it is pushed to development.
-    I did not go all the way because it was not really applicable for this context.
+    - There's no live update - yet -
 ```
 
 ### Compiles and hot-reloads for development
@@ -99,7 +90,3 @@ npm run serve
 ```
 npm run build
 ```
-
-### Internationalization ###
-
-- vue add i18n
