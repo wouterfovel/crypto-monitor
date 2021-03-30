@@ -71,7 +71,7 @@
     - On 'small-screen' breakpoint, the coins list will be placed under the info/trend graph, so we have responsivenes on 
     small screens.
 
-- vue add i18n (Internatinalization)
+- vue add i18n (Internationalization)
 
 - Other things
 
